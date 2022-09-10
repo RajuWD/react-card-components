@@ -2,6 +2,16 @@ import { Products } from './components/products';
 import contents from './content';
 
 export default function App() {
+    const isBackgroundRed = true;
+
+    return (
+        <div
+          style={{
+            backgroundColor: isBackgroundRed ? 'red' : 'blue',
+          }}
+        />
+      );
+    
     return(
            <div className='App'>
                {contents.map(contents => (
@@ -9,9 +19,7 @@ export default function App() {
                        key={contents.id}
                        image={contents.image}
                        name={contents.name}
-                       price={contents.price}
                        totalSales={contents.totalSales}
-                       timeLeft={contents.timeLeft}
                        rating={contents.rating}
                    />
                ))}

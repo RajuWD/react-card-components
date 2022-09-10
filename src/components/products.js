@@ -6,7 +6,7 @@ export function Products(props) {
             <div key={props.id} className='productCard'>
                 <img src={props.image} alt='product-img' className='productImage'></img>
 
-                <FaShoppingCart className={"productCard__cart"} />
+                {/* <FaShoppingCart className={"Join Now"} /> */}
                 <FaRegBookmark className={"productCard__wishlist"} />
                 <FaFireAlt className={"productCard__fastSelling"} />
 
