@@ -2,16 +2,6 @@ import { Products } from './components/products';
 import contents from './content';
 
 export default function App() {
-    const isBackgroundRed = true;
-
-    return (
-        <div
-          style={{
-            backgroundColor: isBackgroundRed ? 'red' : 'blue',
-          }}
-        />
-      );
-    
     return(
            <div className='App'>
                {contents.map(contents => (
